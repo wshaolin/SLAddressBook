@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D4D548B5193E12BB0007217E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D548B4193E12BB0007217E /* Foundation.framework */; };
+		D4D548B7193E12BB0007217E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D548B6193E12BB0007217E /* CoreGraphics.framework */; };
+		D4D548B9193E12BB0007217E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D548B8193E12BB0007217E /* UIKit.framework */; };
+		D4D548BF193E12BB0007217E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4D548BD193E12BB0007217E /* InfoPlist.strings */; };
+		D4D548C1193E12BB0007217E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D548C0193E12BB0007217E /* main.m */; };
+		D4D548C5193E12BB0007217E /* SLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D548C4193E12BB0007217E /* SLAppDelegate.m */; };
+		D4D548C8193E12BB0007217E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D4D548C6193E12BB0007217E /* Main.storyboard */; };
+		D4D548CB193E12BB0007217E /* SLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D548CA193E12BB0007217E /* SLViewController.m */; };
+		D4D548CD193E12BB0007217E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D4D548CC193E12BB0007217E /* Images.xcassets */; };
+		D4D548D4193E12BB0007217E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D548D3193E12BB0007217E /* XCTest.framework */; };
+		D4D548D5193E12BB0007217E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D548B4193E12BB0007217E /* Foundation.framework */; };
+		D4D548D6193E12BB0007217E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D548B8193E12BB0007217E /* UIKit.framework */; };
+		D4D548DE193E12BB0007217E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4D548DC193E12BB0007217E /* InfoPlist.strings */; };
+		D4D548E0193E12BB0007217E /* SLAddressBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D548DF193E12BB0007217E /* SLAddressBookTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D4D548D7193E12BB0007217E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D4D548A9193E12BB0007217E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D4D548B0193E12BB0007217E;
+			remoteInfo = SLAddressBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D4D548B1193E12BB0007217E /* SLAddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLAddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D548B4193E12BB0007217E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D4D548B6193E12BB0007217E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D4D548B8193E12BB0007217E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D4D548BC193E12BB0007217E /* SLAddressBook-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SLAddressBook-Info.plist"; sourceTree = "<group>"; };
+		D4D548BE193E12BB0007217E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4D548C0193E12BB0007217E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D4D548C2193E12BB0007217E /* SLAddressBook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SLAddressBook-Prefix.pch"; sourceTree = "<group>"; };
+		D4D548C3193E12BB0007217E /* SLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLAppDelegate.h; sourceTree = "<group>"; };
+		D4D548C4193E12BB0007217E /* SLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLAppDelegate.m; sourceTree = "<group>"; };
+		D4D548C7193E12BB0007217E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D4D548C9193E12BB0007217E /* SLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLViewController.h; sourceTree = "<group>"; };
+		D4D548CA193E12BB0007217E /* SLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLViewController.m; sourceTree = "<group>"; };
+		D4D548CC193E12BB0007217E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D4D548D2193E12BB0007217E /* SLAddressBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLAddressBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4D548D3193E12BB0007217E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D4D548DB193E12BB0007217E /* SLAddressBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SLAddressBookTests-Info.plist"; sourceTree = "<group>"; };
+		D4D548DD193E12BB0007217E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D4D548DF193E12BB0007217E /* SLAddressBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLAddressBookTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D4D548AE193E12BB0007217E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D548B7193E12BB0007217E /* CoreGraphics.framework in Frameworks */,
+				D4D548B9193E12BB0007217E /* UIKit.framework in Frameworks */,
+				D4D548B5193E12BB0007217E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D548CF193E12BB0007217E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D548D4193E12BB0007217E /* XCTest.framework in Frameworks */,
+				D4D548D6193E12BB0007217E /* UIKit.framework in Frameworks */,
+				D4D548D5193E12BB0007217E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D4D548A8193E12BB0007217E = {
+			isa = PBXGroup;
+			children = (
+				D4D548BA193E12BB0007217E /* SLAddressBook */,
+				D4D548D9193E12BB0007217E /* SLAddressBookTests */,
+				D4D548B3193E12BB0007217E /* Frameworks */,
+				D4D548B2193E12BB0007217E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D4D548B2193E12BB0007217E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D4D548B1193E12BB0007217E /* SLAddressBook.app */,
+				D4D548D2193E12BB0007217E /* SLAddressBookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D4D548B3193E12BB0007217E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4D548B4193E12BB0007217E /* Foundation.framework */,
+				D4D548B6193E12BB0007217E /* CoreGraphics.framework */,
+				D4D548B8193E12BB0007217E /* UIKit.framework */,
+				D4D548D3193E12BB0007217E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D4D548BA193E12BB0007217E /* SLAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				D4D548C3193E12BB0007217E /* SLAppDelegate.h */,
+				D4D548C4193E12BB0007217E /* SLAppDelegate.m */,
+				D4D548C6193E12BB0007217E /* Main.storyboard */,
+				D4D548C9193E12BB0007217E /* SLViewController.h */,
+				D4D548CA193E12BB0007217E /* SLViewController.m */,
+				D4D548CC193E12BB0007217E /* Images.xcassets */,
+				D4D548BB193E12BB0007217E /* Supporting Files */,
+			);
+			path = SLAddressBook;
+			sourceTree = "<group>";
+		};
+		D4D548BB193E12BB0007217E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4D548BC193E12BB0007217E /* SLAddressBook-Info.plist */,
+				D4D548BD193E12BB0007217E /* InfoPlist.strings */,
+				D4D548C0193E12BB0007217E /* main.m */,
+				D4D548C2193E12BB0007217E /* SLAddressBook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4D548D9193E12BB0007217E /* SLAddressBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				D4D548DF193E12BB0007217E /* SLAddressBookTests.m */,
+				D4D548DA193E12BB0007217E /* Supporting Files */,
+			);
+			path = SLAddressBookTests;
+			sourceTree = "<group>";
+		};
+		D4D548DA193E12BB0007217E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D4D548DB193E12BB0007217E /* SLAddressBookTests-Info.plist */,
+				D4D548DC193E12BB0007217E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D4D548B0193E12BB0007217E /* SLAddressBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4D548E3193E12BB0007217E /* Build configuration list for PBXNativeTarget "SLAddressBook" */;
+			buildPhases = (
+				D4D548AD193E12BB0007217E /* Sources */,
+				D4D548AE193E12BB0007217E /* Frameworks */,
+				D4D548AF193E12BB0007217E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SLAddressBook;
+			productName = SLAddressBook;
+			productReference = D4D548B1193E12BB0007217E /* SLAddressBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D4D548D1193E12BB0007217E /* SLAddressBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D4D548E6193E12BB0007217E /* Build configuration list for PBXNativeTarget "SLAddressBookTests" */;
+			buildPhases = (
+				D4D548CE193E12BB0007217E /* Sources */,
+				D4D548CF193E12BB0007217E /* Frameworks */,
+				D4D548D0193E12BB0007217E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D4D548D8193E12BB0007217E /* PBXTargetDependency */,
+			);
+			name = SLAddressBookTests;
+			productName = SLAddressBookTests;
+			productReference = D4D548D2193E12BB0007217E /* SLAddressBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D4D548A9193E12BB0007217E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SL;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					D4D548D1193E12BB0007217E = {
+						TestTargetID = D4D548B0193E12BB0007217E;
+					};
+				};
+			};
+			buildConfigurationList = D4D548AC193E12BB0007217E /* Build configuration list for PBXProject "SLAddressBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D4D548A8193E12BB0007217E;
+			productRefGroup = D4D548B2193E12BB0007217E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D4D548B0193E12BB0007217E /* SLAddressBook */,
+				D4D548D1193E12BB0007217E /* SLAddressBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D4D548AF193E12BB0007217E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D548CD193E12BB0007217E /* Images.xcassets in Resources */,
+				D4D548BF193E12BB0007217E /* InfoPlist.strings in Resources */,
+				D4D548C8193E12BB0007217E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D548D0193E12BB0007217E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D548DE193E12BB0007217E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D4D548AD193E12BB0007217E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D548C1193E12BB0007217E /* main.m in Sources */,
+				D4D548CB193E12BB0007217E /* SLViewController.m in Sources */,
+				D4D548C5193E12BB0007217E /* SLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4D548CE193E12BB0007217E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4D548E0193E12BB0007217E /* SLAddressBookTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D4D548D8193E12BB0007217E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D4D548B0193E12BB0007217E /* SLAddressBook */;
+			targetProxy = D4D548D7193E12BB0007217E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D4D548BD193E12BB0007217E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4D548BE193E12BB0007217E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D4D548C6193E12BB0007217E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4D548C7193E12BB0007217E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D4D548DC193E12BB0007217E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D4D548DD193E12BB0007217E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D4D548E1193E12BB0007217E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D4D548E2193E12BB0007217E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D4D548E4193E12BB0007217E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLAddressBook/SLAddressBook-Prefix.pch";
+				INFOPLIST_FILE = "SLAddressBook/SLAddressBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D4D548E5193E12BB0007217E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLAddressBook/SLAddressBook-Prefix.pch";
+				INFOPLIST_FILE = "SLAddressBook/SLAddressBook-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D4D548E7193E12BB0007217E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SLAddressBook.app/SLAddressBook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLAddressBook/SLAddressBook-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SLAddressBookTests/SLAddressBookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D4D548E8193E12BB0007217E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SLAddressBook.app/SLAddressBook";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SLAddressBook/SLAddressBook-Prefix.pch";
+				INFOPLIST_FILE = "SLAddressBookTests/SLAddressBookTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D4D548AC193E12BB0007217E /* Build configuration list for PBXProject "SLAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D548E1193E12BB0007217E /* Debug */,
+				D4D548E2193E12BB0007217E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4D548E3193E12BB0007217E /* Build configuration list for PBXNativeTarget "SLAddressBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D548E4193E12BB0007217E /* Debug */,
+				D4D548E5193E12BB0007217E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D4D548E6193E12BB0007217E /* Build configuration list for PBXNativeTarget "SLAddressBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4D548E7193E12BB0007217E /* Debug */,
+				D4D548E8193E12BB0007217E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D4D548A9193E12BB0007217E /* Project object */;
+}
