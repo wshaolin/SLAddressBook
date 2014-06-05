@@ -311,7 +311,8 @@
         }
         
         if(contacts.photo){
-            ABPersonSetImageData(record, (__bridge CFDataRef)contacts.photo, NULL);
+            NSData *photoData = UIImageJPEGRepresentation(contacts.photo, 1.0);
+            ABPersonSetImageData(record, (__bridge CFDataRef)photoData, NULL);
         }
         
         ABAddressBookAddRecord(addressBook, record, NULL);
@@ -355,7 +356,7 @@
                     // 是否可以删除的标志
                     BOOL isCanDelete = YES;
                     for(int i = 0; i < ABMultiValueGetCount(phones); i++){
-                        NSString *type = (__bridge NSString *)(ABAddressBookCopyLocalizedLabel(ABMultiValueCopyLabelAtIndex(phones, index)));
+                        NSString *type = (__bridge NSString *)(ABAddressBookCopyLocalizedLabel(ABMultiValueCopyLabelAtIndex(phones, i)));
                         NSString *phone = (__bridge NSString *)(ABMultiValueCopyValueAtIndex(phones, i));
                         SLContactsPhone *contactsPhone = contacts.phones[i];
                         // 如果有其中一个电话号码或者对应的标签不一样，则不允许删除
