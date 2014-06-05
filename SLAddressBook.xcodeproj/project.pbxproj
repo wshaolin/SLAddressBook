@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D403B39F193EEC70007ED70E /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D403B39E193EEC70007ED70E /* AddressBookUI.framework */; };
+		D4856FB7193F4034005A3262 /* SLDateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = D4856FB6193F4034005A3262 /* SLDateUtil.m */; };
+		D4856FBA193F715C005A3262 /* SLConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = D4856FB9193F715C005A3262 /* SLConstants.m */; };
+		D4856FBD193F861A005A3262 /* SLContactsRelatedName.m in Sources */ = {isa = PBXBuildFile; fileRef = D4856FBC193F861A005A3262 /* SLContactsRelatedName.m */; };
 		D4D548B5193E12BB0007217E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D548B4193E12BB0007217E /* Foundation.framework */; };
 		D4D548B7193E12BB0007217E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D548B6193E12BB0007217E /* CoreGraphics.framework */; };
 		D4D548B9193E12BB0007217E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D548B8193E12BB0007217E /* UIKit.framework */; };
@@ -21,6 +25,15 @@
 		D4D548D6193E12BB0007217E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D548B8193E12BB0007217E /* UIKit.framework */; };
 		D4D548DE193E12BB0007217E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D4D548DC193E12BB0007217E /* InfoPlist.strings */; };
 		D4D548E0193E12BB0007217E /* SLAddressBookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D548DF193E12BB0007217E /* SLAddressBookTests.m */; };
+		D4D548ED193E132D0007217E /* SLAddressBook.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D548EC193E132D0007217E /* SLAddressBook.m */; };
+		D4D548F0193E137D0007217E /* SLContacts.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D548EF193E137D0007217E /* SLContacts.m */; };
+		D4D548F3193E18EB0007217E /* SLContactsEmail.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D548F2193E18EB0007217E /* SLContactsEmail.m */; };
+		D4D548F6193E19180007217E /* SLContactsAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D548F5193E19180007217E /* SLContactsAddress.m */; };
+		D4D548F9193E193D0007217E /* SLContactsDate.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D548F8193E193D0007217E /* SLContactsDate.m */; };
+		D4D548FC193E19840007217E /* SLContactsInstantMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D548FB193E19840007217E /* SLContactsInstantMessage.m */; };
+		D4D548FF193E19A70007217E /* SLContactsPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D548FE193E19A70007217E /* SLContactsPhone.m */; };
+		D4D54902193E19B50007217E /* SLContactsURL.m in Sources */ = {isa = PBXBuildFile; fileRef = D4D54901193E19B50007217E /* SLContactsURL.m */; };
+		D4D54904193E1A5C0007217E /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D54903193E1A5C0007217E /* AddressBook.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +47,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D403B39E193EEC70007ED70E /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		D4856FB5193F4034005A3262 /* SLDateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDateUtil.h; sourceTree = "<group>"; };
+		D4856FB6193F4034005A3262 /* SLDateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDateUtil.m; sourceTree = "<group>"; };
+		D4856FB8193F715C005A3262 /* SLConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLConstants.h; sourceTree = "<group>"; };
+		D4856FB9193F715C005A3262 /* SLConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLConstants.m; sourceTree = "<group>"; };
+		D4856FBB193F861A005A3262 /* SLContactsRelatedName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLContactsRelatedName.h; sourceTree = "<group>"; };
+		D4856FBC193F861A005A3262 /* SLContactsRelatedName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLContactsRelatedName.m; sourceTree = "<group>"; };
 		D4D548B1193E12BB0007217E /* SLAddressBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLAddressBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D548B4193E12BB0007217E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D4D548B6193E12BB0007217E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -53,6 +73,23 @@
 		D4D548DB193E12BB0007217E /* SLAddressBookTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SLAddressBookTests-Info.plist"; sourceTree = "<group>"; };
 		D4D548DD193E12BB0007217E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D4D548DF193E12BB0007217E /* SLAddressBookTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLAddressBookTests.m; sourceTree = "<group>"; };
+		D4D548EB193E132D0007217E /* SLAddressBook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAddressBook.h; sourceTree = "<group>"; };
+		D4D548EC193E132D0007217E /* SLAddressBook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAddressBook.m; sourceTree = "<group>"; };
+		D4D548EE193E137D0007217E /* SLContacts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLContacts.h; sourceTree = "<group>"; };
+		D4D548EF193E137D0007217E /* SLContacts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLContacts.m; sourceTree = "<group>"; };
+		D4D548F1193E18EB0007217E /* SLContactsEmail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLContactsEmail.h; sourceTree = "<group>"; };
+		D4D548F2193E18EB0007217E /* SLContactsEmail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLContactsEmail.m; sourceTree = "<group>"; };
+		D4D548F4193E19180007217E /* SLContactsAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLContactsAddress.h; sourceTree = "<group>"; };
+		D4D548F5193E19180007217E /* SLContactsAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLContactsAddress.m; sourceTree = "<group>"; };
+		D4D548F7193E193D0007217E /* SLContactsDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLContactsDate.h; sourceTree = "<group>"; };
+		D4D548F8193E193D0007217E /* SLContactsDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLContactsDate.m; sourceTree = "<group>"; };
+		D4D548FA193E19840007217E /* SLContactsInstantMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLContactsInstantMessage.h; sourceTree = "<group>"; };
+		D4D548FB193E19840007217E /* SLContactsInstantMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLContactsInstantMessage.m; sourceTree = "<group>"; };
+		D4D548FD193E19A70007217E /* SLContactsPhone.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLContactsPhone.h; sourceTree = "<group>"; };
+		D4D548FE193E19A70007217E /* SLContactsPhone.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLContactsPhone.m; sourceTree = "<group>"; };
+		D4D54900193E19B50007217E /* SLContactsURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLContactsURL.h; sourceTree = "<group>"; };
+		D4D54901193E19B50007217E /* SLContactsURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLContactsURL.m; sourceTree = "<group>"; };
+		D4D54903193E1A5C0007217E /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +97,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D403B39F193EEC70007ED70E /* AddressBookUI.framework in Frameworks */,
+				D4D54904193E1A5C0007217E /* AddressBook.framework in Frameworks */,
 				D4D548B7193E12BB0007217E /* CoreGraphics.framework in Frameworks */,
 				D4D548B9193E12BB0007217E /* UIKit.framework in Frameworks */,
 				D4D548B5193E12BB0007217E /* Foundation.framework in Frameworks */,
@@ -82,7 +121,7 @@
 		D4D548A8193E12BB0007217E = {
 			isa = PBXGroup;
 			children = (
-				D4D548BA193E12BB0007217E /* SLAddressBook */,
+				D4D548BA193E12BB0007217E /* Classes */,
 				D4D548D9193E12BB0007217E /* SLAddressBookTests */,
 				D4D548B3193E12BB0007217E /* Frameworks */,
 				D4D548B2193E12BB0007217E /* Products */,
@@ -101,6 +140,8 @@
 		D4D548B3193E12BB0007217E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D403B39E193EEC70007ED70E /* AddressBookUI.framework */,
+				D4D54903193E1A5C0007217E /* AddressBook.framework */,
 				D4D548B4193E12BB0007217E /* Foundation.framework */,
 				D4D548B6193E12BB0007217E /* CoreGraphics.framework */,
 				D4D548B8193E12BB0007217E /* UIKit.framework */,
@@ -109,9 +150,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		D4D548BA193E12BB0007217E /* SLAddressBook */ = {
+		D4D548BA193E12BB0007217E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				D4D548EA193E130D0007217E /* SLAddressBook */,
 				D4D548C3193E12BB0007217E /* SLAppDelegate.h */,
 				D4D548C4193E12BB0007217E /* SLAppDelegate.m */,
 				D4D548C6193E12BB0007217E /* Main.storyboard */,
@@ -120,6 +162,7 @@
 				D4D548CC193E12BB0007217E /* Images.xcassets */,
 				D4D548BB193E12BB0007217E /* Supporting Files */,
 			);
+			name = Classes;
 			path = SLAddressBook;
 			sourceTree = "<group>";
 		};
@@ -150,6 +193,35 @@
 				D4D548DC193E12BB0007217E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D4D548EA193E130D0007217E /* SLAddressBook */ = {
+			isa = PBXGroup;
+			children = (
+				D4D548EB193E132D0007217E /* SLAddressBook.h */,
+				D4D548EC193E132D0007217E /* SLAddressBook.m */,
+				D4D548EE193E137D0007217E /* SLContacts.h */,
+				D4D54900193E19B50007217E /* SLContactsURL.h */,
+				D4D54901193E19B50007217E /* SLContactsURL.m */,
+				D4856FBB193F861A005A3262 /* SLContactsRelatedName.h */,
+				D4856FBC193F861A005A3262 /* SLContactsRelatedName.m */,
+				D4D548FD193E19A70007217E /* SLContactsPhone.h */,
+				D4D548FE193E19A70007217E /* SLContactsPhone.m */,
+				D4D548FA193E19840007217E /* SLContactsInstantMessage.h */,
+				D4D548FB193E19840007217E /* SLContactsInstantMessage.m */,
+				D4D548F7193E193D0007217E /* SLContactsDate.h */,
+				D4D548F8193E193D0007217E /* SLContactsDate.m */,
+				D4D548F4193E19180007217E /* SLContactsAddress.h */,
+				D4D548F5193E19180007217E /* SLContactsAddress.m */,
+				D4D548EF193E137D0007217E /* SLContacts.m */,
+				D4D548F1193E18EB0007217E /* SLContactsEmail.h */,
+				D4D548F2193E18EB0007217E /* SLContactsEmail.m */,
+				D4856FB5193F4034005A3262 /* SLDateUtil.h */,
+				D4856FB6193F4034005A3262 /* SLDateUtil.m */,
+				D4856FB8193F715C005A3262 /* SLConstants.h */,
+				D4856FB9193F715C005A3262 /* SLConstants.m */,
+			);
+			path = SLAddressBook;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,9 +322,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4D548F3193E18EB0007217E /* SLContactsEmail.m in Sources */,
 				D4D548C1193E12BB0007217E /* main.m in Sources */,
+				D4856FB7193F4034005A3262 /* SLDateUtil.m in Sources */,
 				D4D548CB193E12BB0007217E /* SLViewController.m in Sources */,
+				D4856FBA193F715C005A3262 /* SLConstants.m in Sources */,
+				D4D548ED193E132D0007217E /* SLAddressBook.m in Sources */,
 				D4D548C5193E12BB0007217E /* SLAppDelegate.m in Sources */,
+				D4856FBD193F861A005A3262 /* SLContactsRelatedName.m in Sources */,
+				D4D548F0193E137D0007217E /* SLContacts.m in Sources */,
+				D4D54902193E19B50007217E /* SLContactsURL.m in Sources */,
+				D4D548F6193E19180007217E /* SLContactsAddress.m in Sources */,
+				D4D548FC193E19840007217E /* SLContactsInstantMessage.m in Sources */,
+				D4D548FF193E19A70007217E /* SLContactsPhone.m in Sources */,
+				D4D548F9193E193D0007217E /* SLContactsDate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -366,7 +449,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -380,6 +463,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SLAddressBook/SLAddressBook-Prefix.pch";
 				INFOPLIST_FILE = "SLAddressBook/SLAddressBook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +477,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SLAddressBook/SLAddressBook-Prefix.pch";
 				INFOPLIST_FILE = "SLAddressBook/SLAddressBook-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -457,6 +542,7 @@
 				D4D548E5193E12BB0007217E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D4D548E6193E12BB0007217E /* Build configuration list for PBXNativeTarget "SLAddressBookTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +551,7 @@
 				D4D548E8193E12BB0007217E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
