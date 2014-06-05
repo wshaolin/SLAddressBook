@@ -22,8 +22,10 @@ iOS通讯录访问操作封装，全部封装为objective-c对象，不用再操
     contacts.phones = @{phone};
     [addressBook addContacts:contacts];
 ###5.修改通讯录中一个联系人的资料，如果修改的联系人在通讯录中没有时会增加这个联系人到通讯录中
+    // contacts应该得到的是一个真实存在的联系人，而非通过[[SLContacts alloc] init]创建，此处只是举例表面方法传入的参数类型
     SLContacts *contacts = [[SLContacts alloc] init];
     [addressBook updateContacts:contacts];
 ###6.删除一个联系人
+    // contacts应该得到的是一个真实存在的联系人，而非通过[[SLContacts alloc] init]创建，此处只是举例表面方法传入的参数类型
     SLContacts *contacts = [[SLContacts alloc] init];
     [addressBook deleteContacts:contacts];
