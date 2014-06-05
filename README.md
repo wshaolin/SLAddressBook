@@ -1,7 +1,8 @@
 SLAddressBook
 =============
-    
-iOS通讯录访问操作封装，全部封装为objective-c对象，不用再操作底层的C语言代码
+iOS通讯录访问操作封装，全部封装为objective-c对象，不用再操作底层的C语言代码.
+
+使用方法：
 =============
 ###1.获取所有联系人，返回数组，数组中的元素类型为SLContacts
     SLAddressBook *addressBook = [SLAddressBook addressBook];
