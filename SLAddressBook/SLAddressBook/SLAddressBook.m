@@ -34,6 +34,7 @@
         dispatch_semaphore_signal(semaphore);
     });
     dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
+    CFRelease(addressBook);
 }
 
 - (NSArray *)allContacts{
@@ -52,6 +53,7 @@
         }else{
             peopleArray = ABAddressBookCopyArrayOfAllPeople(addressBook);
         }
+        
         if(peopleArray != NULL){
             for(CFIndex index = 0; index < CFArrayGetCount(peopleArray); index ++){
                 ABRecordRef record = CFArrayGetValueAtIndex(peopleArray, index);
@@ -90,7 +92,7 @@
     }else{
         contacts.kind = SLContactsKindTypePerson;
     }
-    
+    CFRelease(kind);
     contacts.emails = [self allContactsEmail:record];
     contacts.addresses = [self allContactsAddress:record];
     contacts.instantMessages = [self allContactsInstantMessage:record];
@@ -117,6 +119,7 @@
             [allEmail addObject:email];
         }
     }
+    CFRelease(emailMultiValue);
     return [allEmail copy];
 }
 
@@ -137,6 +140,7 @@
             [allAddress addObject:address];
         }
     }
+    CFRelease(addressMultiValue);
     return [allAddress copy];
 }
 
@@ -151,6 +155,7 @@
             [allDate addObject:date];
         }
     }
+    CFRelease(dateMultiValue);
     return [allDate copy];
 }
 
@@ -166,6 +171,7 @@
             [allInstantMessage addObject:instantMessage];
         }
     }
+    CFRelease(instantMessageMultiValue);
     return [allInstantMessage copy];
 }
 
@@ -180,6 +186,7 @@
             [allPhone addObject:phone];
         }
     }
+    CFRelease(phoneMultiValue);
     return [allPhone copy];
 }
 
@@ -194,20 +201,22 @@
             [allURL addObject:URL];
         }
     }
+    CFRelease(urlMultiValue);
     return [allURL copy];
 }
 
 - (NSArray *)allRelatedName:(ABRecordRef)record{
     NSMutableArray *allURL = [NSMutableArray array];
-    ABMultiValueRef urlMultiValue = ABRecordCopyValue(record, kABPersonRelatedNamesProperty);
-    if(urlMultiValue != NULL){
-        for(CFIndex index = 0; index < ABMultiValueGetCount(urlMultiValue); index ++){
+    ABMultiValueRef relatedNameMultiValue = ABRecordCopyValue(record, kABPersonRelatedNamesProperty);
+    if(relatedNameMultiValue != NULL){
+        for(CFIndex index = 0; index < ABMultiValueGetCount(relatedNameMultiValue); index ++){
             SLContactsRelatedName *relatedName = [[SLContactsRelatedName alloc] init];
-            relatedName.type = (__bridge NSString *)(ABAddressBookCopyLocalizedLabel(ABMultiValueCopyLabelAtIndex(urlMultiValue, index)));
-            relatedName.name = (__bridge NSString *)(ABMultiValueCopyValueAtIndex(urlMultiValue, index));
+            relatedName.type = (__bridge NSString *)(ABAddressBookCopyLocalizedLabel(ABMultiValueCopyLabelAtIndex(relatedNameMultiValue, index)));
+            relatedName.name = (__bridge NSString *)(ABMultiValueCopyValueAtIndex(relatedNameMultiValue, index));
             [allURL addObject:relatedName];
         }
     }
+    CFRelease(relatedNameMultiValue);
     return [allURL copy];
 }
 
@@ -246,6 +255,7 @@
                 ABMultiValueAddValueAndLabel(emailMultiValue, (__bridge CFStringRef)email.emailText, (__bridge CFStringRef)email.type, NULL);
             }
             ABRecordSetValue(record, kABPersonEmailProperty, emailMultiValue, NULL);
+            CFRelease(emailMultiValue);
         }
         
         if(contacts.addresses.count){
@@ -262,6 +272,7 @@
                 ABMultiValueAddValueAndLabel(addressMultiValue, (__bridge CFDictionaryRef)(addressDictionary), (__bridge CFStringRef)address.type, NULL);
             }
             ABRecordSetValue(record, kABPersonAddressProperty, addressMultiValue, NULL);
+            CFRelease(addressMultiValue);
         }
         
         if(contacts.dates.count){
@@ -271,6 +282,7 @@
                 ABMultiValueAddValueAndLabel(dateMultiValue, (__bridge CFDateRef)date.date, (__bridge CFStringRef)date.type , NULL);
             }
             ABRecordSetValue(record, kABPersonDateProperty, dateMultiValue, NULL);
+            CFRelease(dateMultiValue);
         }
         
         if(contacts.instantMessages.count){
@@ -281,6 +293,7 @@
                 instantMessagesDictionary[instantMessage.type] = instantMessage.account;
             }
             ABRecordSetValue(record, kABPersonInstantMessageProperty, instantMessagesMultiValue, NULL);
+            CFRelease(instantMessagesMultiValue);
         }
         
         if(contacts.phones.count){
@@ -290,6 +303,7 @@
                 ABMultiValueAddValueAndLabel(phonesMultiValue, (__bridge CGShadingRef)phone.phone, (__bridge CFStringRef)phone.type, NULL);
             }
             ABRecordSetValue(record, kABPersonPhoneProperty, phonesMultiValue, NULL);
+            CFRelease(phonesMultiValue);
         }
         
         if(contacts.urls.count){
@@ -299,6 +313,7 @@
                 ABMultiValueAddValueAndLabel(urlsMultiValue, (__bridge CFStringRef)url.url, (__bridge CFStringRef)url.type, NULL);
             }
             ABRecordSetValue(record, kABPersonURLProperty, urlsMultiValue, NULL);
+            CFRelease(urlsMultiValue);
         }
         
         if(contacts.relatedNames.count){
@@ -308,6 +323,7 @@
                 ABMultiValueAddValueAndLabel(relatedNamesMultiValue, (__bridge CFStringRef)relatedName.name, (__bridge CFStringRef)relatedName.type, NULL);
             }
             ABRecordSetValue(record, kABPersonRelatedNamesProperty, relatedNamesMultiValue, NULL);
+            CFRelease(relatedNamesMultiValue);
         }
         
         if(contacts.photo){
@@ -369,6 +385,7 @@
                         ABAddressBookRemoveRecord(addressBook, record, NULL);
                         ABAddressBookSave(addressBook, NULL);
                     }
+                    CFRelease(phones);
                 }
             }
             CFRelease(peopleArray);
